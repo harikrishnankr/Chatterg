@@ -21,8 +21,13 @@
 	 	<%@total_msg.each do |msg|%>
 	 	  <div id="transactions">
 	 	  	 <div class="msg_id">
-	 	  	 	<%=User.find_by_id(msg.from).name%>
-	 	  	 	<div style="margin-left:180px;"><%=msg.created_at.strftime('%H:%M')%></div>
+	 	  	 	<%if User.find_by_id(msg.from).id==session[:id]%>
+	 	  	 	    <div style="background-color:orange;"> <span>Me</span></div>
+	 	  	 	    <div style="margin-left:180px;background-color:orange;border-top-right-radius:19px;"><%=msg.created_at.strftime('%H:%M')%></div>
+	 	  	 	<%else%>
+	 	  	 	     <%= User.find_by_id(msg.from).name%>
+	 	  	 	     <div style="margin-left:180px;"><%=msg.created_at.strftime('%H:%M')%></div>
+	 	  	 	<%end%>
 	 	  	 </div>	
 			 <%=msg.message%><br>
 		  </div>
