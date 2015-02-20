@@ -20,10 +20,9 @@
 	#transactions{
 		background: rgba(54, 25, 25, .5);
 		color:white;
-		box-shadow: 1px 2px 5px 4px rgba(81, 203, 238, .9);
+		box-shadow: 1px 2px 4px 3px rgba(81, 203, 238, .9);
 		margin-top: 10px;
 		border-top-right-radius:19px;
-		border-bottom-left-radius: 19px; 
 		min-height: 50px;
 		position: relative;
 		left: 10%;
