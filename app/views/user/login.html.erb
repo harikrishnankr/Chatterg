@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/assets/user_login.css">
+	</head>
+	<body>
+    <ul>
+     <li>
+	  <div id="login">
+	    <div class="form">
+			<%= form_tag(user_sign_in_path, method: :post) do%>
+				<div class="white"><%=label_tag :username%></div>
+				<%= text_field_tag :username %>
+
+				<div class="white"><%=label_tag :password%></div>
+				<%=password_field_tag :password %>
+
+    			<br><br>
+  				<div class="login"><%=submit_tag "Begin", :class=>"btn btn-primary"%></div>
+  			<%end%>
+  		</div>
+  	 </div>
+  	 </li>
+  	 <li class="down">
+  	  <div class="right">
+  	   <div id="login_down">
+	    <div class="form">
+			<%= form_for @user=User.new, :url=>user_creat_path, method: :post do |form| %>
+				<div class="white"><%=form.label :username%></div>
+				<%= form.text_field :username ,:autofocus=>true%>
+
+				<div class="white"><%=form.label :password%></div>
+				<%=form.password_field :password %>
+
+				<div class="white"><%=form.label :password_confirmation%></div>
+				<%=form.password_field :password_confirmation %>
+
+				<div class="white"><%=form.label :name%></div>
+				<%= form.text_field :name %>
+
+				<div class="white"><%=form.label :email%></div>
+				<%= form.email_field :email %>
+
+				<div class="white"><%=form.label :phone%></div>
+				<%= form.phone_field :phone %>
+
+				<%= form.hidden_field :login, :value=>1 %>
+    			<br><br>
+  				<div class="login"><%=submit_tag "Go Beyond", :class=>"btn btn-primary"%></div>
+  			<%end%>
+  		</div>
+  	   </div>
+  	  </div>
+  	 </li>
+  	</ul>
+  	<h1 class="head">To Become One of <span class="G">'G'</span> Family</h1>
+	</body>
+</html>

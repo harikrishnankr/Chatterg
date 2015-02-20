@@ -1,0 +1,47 @@
+	#heading{
+		color: blue;
+	}
+	#E{
+		color:red;
+	}
+	#message{
+		height: 10%;
+		width: 50%;
+		position: relative;
+		left: 10%;
+	}
+	.go{
+		color:black;
+		height: 65px;
+		position: relative;
+		bottom: 5px;
+		left:10%;
+	}
+	#transactions{
+		background: rgba(54, 25, 25, .5);
+		color:white;
+		box-shadow: 1px 2px 5px 4px rgba(81, 203, 238, .9);
+		margin-top: 10px;
+		border-top-right-radius:19px;
+		border-bottom-left-radius: 19px; 
+		min-height: 50px;
+		position: relative;
+		left: 10%;
+		width: 20%;
+	}
+	.msg_id{
+		background-color: green;
+		border-top-right-radius:19px;
+	}
+	.left{
+		position: absolute;
+		top:50px;
+		left:80%;
+	}
+	.online-guys{
+		background-color: gray;
+		border-radius: 3px;
+		color: white;
+		position: relative;
+		left: 2px;
+	}

@@ -1,0 +1,44 @@
+body{
+	height: 100%;
+}
+#login{
+	background:rgba(54, 25, 25, .5);
+	width: 170%;
+	height:	200px;
+	margin-left: 29%;
+	margin-top: 80%;
+	border-top-right-radius: 50px; 
+	border-bottom-left-radius: 50px;
+}
+#login_down{
+	background:rgba(54, 25, 25, .5);
+	width: 170%;
+	height:	450px;
+	margin-left: 29%;
+	position: relative;
+	top:60px;
+	border-top-right-radius: 50px; 
+	border-bottom-left-radius: 50px;
+}
+.white{
+	color:white;
+}
+.login{
+	margin-left: 10%;
+	margin-bottom: 30%;
+}
+.form{
+	position: relative;
+	left:20%;
+}
+.down{
+	position: relative;
+	left: 20%;
+}
+ul li{
+	float: left;
+	list-style: none;
+}
+.G{
+	color: red;
+}
