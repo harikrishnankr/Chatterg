@@ -12,7 +12,7 @@
     <%= link_to  "Clear All Message",user_clear_path,:class=>"btn btn-danger"%>
     <div class="right">
 	  <div id="message">
-		<%= form_tag(user_clear_path, method: :post) do%>
+		<%= form_tag(user_msg_send_path, method: :post) do%>
     		<%= text_area_tag :message%>
     		<%=submit_tag "send", :class=>"btn btn-primary go"%>   
 		<%end%>
