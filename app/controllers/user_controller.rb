@@ -46,6 +46,11 @@ class UserController < ApplicationController
       redirect_to root_url and return
     end
   end
+  def login
+    if session[:id]
+      redirect_to user_index_path
+    end
+  end
   def clear
     Message.destroy_all
     redirect_to :back
